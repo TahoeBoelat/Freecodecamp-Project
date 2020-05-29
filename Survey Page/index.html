@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survei Rasa Pelanggan MieAhoeng</h1>
+        <p id="description">Silahkan isi formulir dibawah ini</p>
+    </header>
+    <main>
+        <!-- Jumbotron -->
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label">Nama</label>
+            <input type="text" id="name" placeholder="Nama Anda" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Email Anda" required>
+            <label for="number" id="number-label">No HP</label>
+            <input type="number" id="number" placeholder="No Telepon Anda" min="6" max="12">
+
+            <label for="mieType" id="mieType-label">Pilih Jenis Mie Favorit</label>
+            <select name="mieType" id="dropdown">
+                <option value="mieGoreng">Mie Goreng</option>
+                <option value="mieRebus">Mie Rebus</option>
+                <option value="omelet">Telor Mie</option>
+                <option value="lasagna">Lasagna Mie</option>
+                <option value="internet">Indomie Telor Kornet</option>
+            </select>
+
+            <label for="rekomendasi" id="rekomendasiResto">Apakah anda akan merekomendasi toko ini?</label>
+            <label><input type="radio" name="rekomendasi" value="1">Ya</label>
+            <label><input type="radio" name="rekomendasi" value="2">Tidak</label>
+
+            <label for="toping" id="topingMakanan">Apakah terdapat toping mie yang anda akan tambahkan?</label>
+            <label><input type="checkbox" name="toping" value="telor">Telor</label>
+            <label><input type="checkbox" name="toping" value="kornet">Kornet</label>
+            <label><input type="checkbox" name="toping" value="sayur">Sayur</label>
+            <label><input type="checkbox" name="toping" value="keju">Keju</label>
+            <label><input type="checkbox" name="toping" value="daging">Daging</label>
+            <label><input type="checkbox" name="toping" value="sosis">Sosis</label>
+
+            <label for="kritikSaran" id="kritikSaran-label">Masukan Kritik dan Saran Anda</label>
+            <textarea name="kritikSaran" id="kritikdanSaran" cols="30" rows="10"></textarea>
+            <input type="submit" value="kirim" id="submit">
+            <input type="reset" value="reset" id="reset">
+        </form>
+    </main>
+    <footer>
+        <h3>2020 Mie Ahoeng</h3>
+    </footer>
+</body>
+</html>

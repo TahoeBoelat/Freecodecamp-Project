@@ -1,0 +1,73 @@
+body {
+    background: #f5ececc9;  
+}
+
+#title {
+    text-align: center;
+}
+
+#title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+#title p {
+    font-family: 'Raleway', sans-serif;   
+    font-size: 20px;
+}
+
+#img-div img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+    border-radius: 100px;
+}
+
+#img-caption {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 15px;
+}
+
+#tribute-info h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+#tribute-info p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#more-information p {
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: black;
+}
+
+#tribute-link:hover {
+    color: #5f5a5a;
+}
+
+
+
+/* Media Query */
+@media (max-width: 400px) {
+    #img-div img {
+        height: 200px;
+        width: 200px;
+    }
+}
