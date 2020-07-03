@@ -1,0 +1,86 @@
+html, body {
+    color: rgb(117, 112, 112);
+    background-color: white;
+    font-family: 'Montaga', sans-serif;
+}
+
+#navbar {
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 290px;
+    margin-left: 20px;
+    position: fixed;
+    border-right: solid;
+    overflow: scroll;
+}
+
+#navbar ul {
+    list-style: none;
+    display:block;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(117, 112, 112);
+}
+
+#navbar header {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(117, 112, 112);
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    text-align: left;
+}
+
+#main-doc a {
+    text-decoration: none;
+    color: rgb(117, 112, 112);
+}
+
+#main-doc h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+header {
+    font-size: 20px;
+}
+
+
+/* Mobile Design */
+@media only screen and (max-width: 500px) {
+    #navbar {
+       position: relative;
+       overflow: scroll;
+       margin-left: 20px;
+       margin-right: 30px;
+       margin-bottom: 30px;
+       font-size: 15px;
+    }
+    #main-doc {
+       margin-left: 0px;
+       margin-right: 20px;
+       padding-right: 5px;
+       position: absolute;
+       text-align: justify;
+    }
+
+    #navbar header {
+        margin-top: 12px;
+        text-transform: uppercase;
+        text-align: left;
+        color: rgb(117, 112, 112);
+    }
+
+    #Contoh_Huruf h2 {
+        font-size: 12px;
+        text-transform:uppercase;
+    }
+}

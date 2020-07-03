@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <!-- Navigasi -->
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#bidangKerja">Bidang Kerja</a></li>
+                <li><a class="nav-link" href="#informasi">Keterbukaan Informasi</a></li>
+                <li><a class="nav-link" href="#profil">Profil</a></li>
+            </ul>
+            <img src="img/pwk.png" alt="logoPWK" id="header-img">
+          </nav>
+    </header>
+    <main id="main-content">
+        <!-- Jumbotron -->
+        <div id="jumbotron">
+            <h1>Sampurasun</h1>
+            <h2>Wilujeung sumping ka situs Dinas Pemberdayaan Masyarakat dan Desa Kabupaten Purwakarta</h2>
+            <div id="newsletter">
+                <p>Hayu Urang Langganan Berita Surel DPMD Kabupaten Purwakarta</p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input type="email" name="email" id="email" placeholder="Masukan E-mail Anda">
+                    <input type="submit" value="Kirim" id="submit">
+                </form>
+            </div>
+        </div>
+        <!-- Video -->
+        <div id="profil">
+            <h3>Sekilas tentang Purwakarta</h3>
+            <video id="video" controls>
+                <source src="https://www.youtube.com/watch?v=pyPWPxPKjDk" type="video/mp4">
+            </video>
+        </div>
+        <!-- Keterbukaan Informasi -->
+        <div id="informasi">
+            <form action="#" id="formulirInformasi">
+                <h3>Silahkan isi formulir berikut untuk pengajuan Data dan Informasi</h3>
+                <fieldset>
+                    <legend>Data Personal</legend>
+                        <div id="personalData">
+                            <label for="name">Nama Anda</label>
+                            <input type="text" placeholder="Isi dengan Nama Anda" id="name" name="name">
+                            <label for="Alamat">Alamat Anda</label>
+                            <input type="text" placeholder="Isi dengan Alamat Anda" id="alamat" name="alamat" >
+                            <label for="tempatLahir">Tempat Lahir</label>
+                            <input type="text" placeholder="Isi dengan Tempat Lahir Anda" id="tempatLahir" name="tempatLahir">
+                            <label for="tanggalLahir">Tanggal Lahir</label>
+                            <input type="date" id="tanggalLahir" name="tanggalLahir">
+                            <label for="idNumber">Nomor KTP/SIM/Kartu Keluarga Anda</label>
+                            <input type="number" placeholder="Isi dengan Nomor KTP/SIM/Kartu Anda" id="idNumber" name="idNumber" max="15">
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Kontak Personal</legend>
+                        <div id="personalContact">
+                            <label for="email">Email Anda</label>
+                            <input type="email" placeholder="Isi dengan Alamat Email Anda" id="email" name="email">
+                            <label for="noHp">Nomor HP Anda</label>
+                            <input type="number" placeholder="Isi dengan Nomor HP Anda" id="noHP" name="noHp" max="12">
+                            <label for="asalInstansi">Asal Instansi Anda</label>
+                            <input type="text" placeholder="Isi dengan Asal Instansi Anda" id="instansi" name="asalInstansi">
+                        </div>
+                </fieldset>
+                <fieldset >
+                    <legend>Data yang Diperlukan</legend>
+                        <div id="dataRequest">
+                            <label for="informasiData">Silahkan Pilih Tujuan Penggunaan Data</label>
+                            <select name="informasiData" id="informasiData">
+                                <option value="1">Penelitian Skripsi</option>
+                                <option value="2">Penelitian Thesis</option>
+                                <option value="3">Penelitian Disertasi</option>
+                                <option value="4">Penelitian Karya Tulis Ilmiah</option>
+                            </select>
+                            <br>
+                            <label for="jenisData">Jenis Data dan Informasi yang Dibutuhkan</label>
+                            <label><input type="checkbox" name="jenisData">Rencana Strategis 2015-2020</label>
+                            <label><input type="checkbox" name="jenisData">Rencana Kerja 2020</label>
+                            <label><input type="checkbox" name="jenisData">Anggaran Pelaksanaan Program 2015-2020</label>
+                            <label><input type="checkbox" name="jenisData">Sejarah dan Profil Instansi</label>
+                            <label><input type="checkbox" name="jenisData">Kepegawaian</label>
+                            <label><input type="checkbox" name="jenisData">Laporan Hasil Kinerja Pegawai</label>
+                        </div>
+                </fieldset>
+                <input type="submit" value="Kirim" id="submit">
+            </form>
+        </div>
+        <!-- Bidang Kerja -->
+        <h3>Bidang Kerja DPMD Kabupaten Purwakarta</h3>
+        <div id="bidangKerja">
+            <div id="pemDes">
+                <h2>Bidang Kerja Pemerintahan Desa</h2>
+                <a href="#">Lihat Kegiatan</a>
+            </div>
+            <div id="ekonomiDesa">
+                <h2>Bidang Kerja Pemberdayaan Ekonomi Desa</h2>
+                <a href="#">Lihat Kegiatan</a>
+            </div>
+            <div id="potensiDesa">
+                <h2>Bidang Kerja Pengembangan Kelembagaan dan Potensi Desa</h2>
+                <a href="#">Lihat Kegiatan</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>DPMD KABUPATEN PURWAKARTA, 2020</p>
+    </footer>
+</body>
+</html>
