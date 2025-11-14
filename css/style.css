@@ -4,6 +4,7 @@
     font-family: 'Raleway', sans-serif;
 }
 #main-title {
+    font-size: 18px;
     margin-top: 25px;
     text-align: center;
 }
@@ -12,20 +13,53 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 2.5em;
+    padding: 2px 16px;
 }
 .menu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5em;
+    margin-right: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.menu-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);;
 }
 .menu-link {
     font-size: 18px;
     color: black;
-    margin-top: 20px;
     text-decoration: none;
 }
 .footer-container {
     margin-top: 2.5em;
     text-align: center;
+}
+
+/* Mobile screen */
+@media only screen and (min-width: 300px) and (max-width: 950px) {
+    #main-title {
+        font-size: 16px;
+        margin-bottom: 2em;
+        text-align: center;    
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: auto;
+    }
+    .menu-container {
+        margin-top: 32px;
+        width: 150px;
+        margin: auto;
+        padding: auto;
+    }
+    .menu-container:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);;
+    }
+    .menu-link {
+        font-size: 14px;
+    }
+    
 }
